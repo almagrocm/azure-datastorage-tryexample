@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="BaseUIApp">
+  
+<head>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-ui-router.js"></script>
+
+    <script src="app/controllers/customer/customer.controller.js"></script>
+
+    <script src="app/modules/services.module.js"></script>
+    <script src="app/modules/customer/customer.module.js"></script>
+
+    <script src="app/services/customer.service.js"></script>
+
+    <script src="app/controllers/BaseUIController.js"></script>
+    <script src="app/BaseUI.js"></script>
+
+    <title>Base UI</title>
+</head>
+  
+<body ng-controller="BaseUIController">   
+<div >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div ui-view="containerOne"></div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+  
+</html> 

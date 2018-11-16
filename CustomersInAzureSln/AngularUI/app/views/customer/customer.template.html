@@ -1,0 +1,61 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        Insert New Customer
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <form class="form-login" role="form">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Name" ng-model="customer.name" required autofocus>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Address" ng-model="customer.address">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Phone" ng-model="customer.phone">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="email" class="form-control" placeholder="Email" ng-model="customer.email" required>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Age" ng-model="customer.age">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-lg btn-info btn-block" type="submit" ng-click="addCustomer()">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div class="row"> 
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="customer in customers">
+                    <td>{{customer.Name}}</td>
+                    <td>{{customer.Address}}</td>
+                    <td>{{customer.Phone}}</td>
+                    <td>{{customer.Email}}</td>
+                    <td>{{customer.Age}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
